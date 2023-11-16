@@ -2,7 +2,7 @@
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-var api = new OpenAI_API.OpenAIAPI("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");
+var api = new OpenAI_API.OpenAIAPI("API Key");
 var chat = api.Chat.CreateConversation();
 
 app.MapGet("/", (HttpContext context) =>
